@@ -10,7 +10,6 @@ $siteMidGray: #86898c;
 $siteDarkGray: #636466;
 $siteTeal: #4ebebc;
 
-
 // Greys
 $black: #000;
 $darkerGrey: lighten($black, 10%);
@@ -79,25 +78,28 @@ $codeFont: monospace;
 
 // Links
 $linkColor: #00f;
-$linkHover: darken($linkColor, 5%);
-$linkVisited: darken($linkColor, 10%);
-$linkActive: darken($linkColor, 15%);
+$linkHover: darken($linkColor,5%);
+$linkVisited: darken($linkColor,10%);
+$linkActive: darken($linkColor,15%);
 $linkWeight: bold;
 
 // Forms
 $textboxBackground: #fff;
 $textboxBorderColor: $lighterGrey;
 $textboxBorderColorActive: #f00;
-$textboxBorderWidth: (1rem / 16);
+$textboxBorderWidth: (1rem/16);
 $textboxBorderStyle: solid;
 $textboxColor: $baseFontColor;
 $textboxFontSize: 1rem;
-$textboxPadding: (6rem / 16) 1.5rem;
+$textboxFontWeight: normal;
+$textboxTextTransform: none;
+$textboxPadding: 0 1.5rem;
+$textboxLineHeight: (28rem/16);     //Whatever you set here, will be used as a height + border width * 2
 $textboxPlaceholderColor: $midGrey;
 $textboxPlaceholderSize: 1em;
-$textboxPlaceholderStyle: normal; //Change to italic if you want placeholder text to be italic.
+$textboxPlaceholderStyle: normal;   //Change to italic if you want placeholder text to be italic.
 
-$labelFontSize: (18rem / 16);
+$labelFontSize: (18rem/16);
 $labelColor: $baseFontColor;
 $labelFontWeight: bold;
 
@@ -107,11 +109,13 @@ $buttonBorderColor: $baseFontColor;
 $buttonBorderWidth: .25rem;
 $buttonBorderStyle: solid;
 $buttonColor: $baseFontColor;
-$buttonOutlineColor: none;
+$buttonOutline: none;            //Uncomment if you want to turn off outlines entirely, or change them to a solid color
+//$buttonOutlineColor: red;      //Uncomment if you just want to change the color of the default browser "glow"
 $buttonFont: $baseFont;
-$buttonFontSize: (14rem / 16);
+$buttonFontSize: (14rem/16);
 $buttonFontWeight: 600;
 $buttonPadding: .5rem 1.5rem;
+$buttonTextDecoration: none;
 $buttonTextTransform: none;
 
 $buttonAltBackground: $baseFontColor;
@@ -120,10 +124,10 @@ $buttonAltBackground: $baseFontColor;
 // Tables
 $tableCellPadding: .25rem;
 $tableStripe: $lighterGrey;
-$tableFontSize: (14rem / 16);
+$tableFontSize: (14rem/16);
 
 // Blockquotes
-$blockquoteMarginBottom: (14rem / 16);
+$blockquoteMarginBottom: (14rem/16);
 $blockquotePaddingLeft: 0;
 $blockquoteBorderWidth: 0;
 $blockquoteBorderStyle: solid;
@@ -136,5 +140,5 @@ $blockquoteFontWeight: 200;
 
 // Code/Pre blocks
 $codeFontFamily: $codeFont;
-$codeFontSize: (14rem / 16);
+$codeFontSize: (14rem/16);
 $codeColor: $baseFontColor;
