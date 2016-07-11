@@ -517,6 +517,11 @@ h5 {
   display: inline-block;
   font-family: "Gotham-Book";
   vertical-align: middle; }
+  .body__footer h5 {
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    position: relative;
+    top: 50%; }
 
 @media only screen and (max-width: 573px) {
   h1 {

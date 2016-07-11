@@ -12,7 +12,7 @@
 <main class="body__work">
     <section class="project project--visual-quiz">
         <div class="project__container">
-            <a href="http://lemonly.com/visual-quiz/" target="_blank"><img class="project__img" src="img/visual-quiz.png" srcset="img/visual-quiz.png 1x, img/visual-quiz_2x.png 2x" alt="Visual Quiz example img"/></a>
+            <a href="http://lemonly.com/visual-quiz/" target="_blank"><img class="project__img" src="<?php echo get_template_directory_uri(); ?>/img/visual-quiz.png" srcset="<?php echo get_template_directory_uri(); ?>/img/visual-quiz.png 1x, <?php echo get_template_directory_uri(); ?>/img/visual-quiz_2x.png 2x" alt="Visual Quiz example img"/></a>
             <h3>Lemonly's Visual Quiz</h3>
             <p class="subtitle">Web Animation/UX/Interactive</p>
             <p class="description">The Visual Quiz is used by Lemonly to determine what services potential clients are interested in. It was designed by Ashton Dockendorf. I built the site, including logic engine and animation.</p>
@@ -20,15 +20,15 @@
     </section>
     <section class="project project--map">
         <div class="project__container">
-            <a href="http://kochhazard.com/interactive-map/index.html" target="_blank"><img class="project__img" src="img/map.png" srcset="img/map.png 1x, img/map_2x.png 2x" alt="Interactive Map example img"/></a>
+            <a href="http://kochhazard.com/interactive-map/index.html" target="_blank"><img class="project__img" src="<?php echo get_template_directory_uri(); ?>/img/map.png" srcset="<?php echo get_template_directory_uri(); ?>/img/map.png 1x, <?php echo get_template_directory_uri(); ?>/img/map_2x.png 2x" alt="Interactive Map example img"/></a>
             <h3>Koch Hazard Interactive Map</h3>
             <p class="subtitle">UX/Interactive</p>
             <p class="description">This is a draggable interactive map developed to give information on Koch Hazard’s current and past projects. It was designed by Ashton Dockendorf and built by myself.</p>
         </div>
     </section>
     <section class="project project--codepen">
-        <img class="arrow arrow--left pen__arrow--left" src="img/arrow.svg"/>
-        <img class="arrow arrow--right pen__arrow--right" src="img/arrow.svg"/>
+        <img class="arrow arrow--left pen__arrow--left" src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg"/>
+        <img class="arrow arrow--right pen__arrow--right" src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg"/>
         <div class="project__container">
             <div class="codepen-container codepen--movie">
                 <div class="pen">
@@ -51,21 +51,21 @@
         </div>
     </section>
     <section class="project project--gif">
-        <img class="arrow gif__arrow--left" src="img/arrow.svg"/>
-        <img class="arrow gif__arrow--right" src="img/arrow.svg"/>
+        <img class="arrow gif__arrow--left" src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg"/>
+        <img class="arrow gif__arrow--right" src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg"/>
         <div class="project__container">
             <div class="gif-container gif--friends">
-                <img class="gif" src="img/friends.gif" alt="friends on social media gif"/>
+                <img class="gif" src="<?php echo get_template_directory_uri(); ?>/img/friends.gif" alt="friends on social media gif"/>
                 <h3>Friends</h3>
                 <p class="description">A gif I animated using After Effects for Lemonly’s Instagram feed. Designed by Alyssa McDowell</p>
             </div>
             <div class="gif-container gif--euro">
-                <img class="gif" src="img/euro_languages.gif" alt="Number of languages people speak in europe"/>
+                <img class="gif" src="<?php echo get_template_directory_uri(); ?>/img/euro_languages.gif" alt="Number of languages people speak in europe"/>
                 <h3>Europeans and their languages</h3>
                 <p class="description">A gif I animated using After Effects for Lemonly’s Instagram feed. Designed by Alyssa McDowell</p>
             </div>
             <div class="gif-container gif--most-used">
-                <img class="gif" src="img/most_used_apps.gif" alt="Most used apps on Itunes belong to two companies"/>
+                <img class="gif" src="<?php echo get_template_directory_uri(); ?>/img/most_used_apps.gif" alt="Most used apps on Itunes belong to two companies"/>
                 <h3>Top Apps</h3>
                 <p class="description">A gif I animated using After Effects for Lemonly’s Instagram feed. Designed by Alyssa McDowell</p>
             </div>

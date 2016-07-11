@@ -23,13 +23,13 @@
 <div class="wrapper">
     <header class="body__header" role="banner">
         <div class="header__menu">
-            <a href="index.html"><h4>About</h4></a>
-            <a href="index.html"><img class="logo" src="img/ryan-logo.svg" alt="Ryan's Logo"/></a>
-            <a href="work.html"><h4>Work</h4></a>
+            <a href="<?php echo get_template_directory_uri(); ?>/home"><h4>About</h4></a>
+            <a href="<?php echo get_template_directory_uri(); ?>/home"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/ryan-logo.svg" alt="Ryan's Logo"/></a>
+            <a href="<?php echo get_template_directory_uri(); ?>/work"><h4>Work</h4></a>
         </div>
         <div class="header__links">
-            <a href="https://twitter.com/RyanLeichliter" target="_blank"><img class="icon header__twitter" src="img/twitter.svg" alt="Twitter"/></a>
-            <a href="mailto:ryan.leichliter@icloud.com?Subject=I%20am%20interested%20in%20hiring%20you!"><img class="icon header__email" src="img/email.svg" alt="Email"/></a>
-            <a href="https://github.com/LeKohrs" target="_blank"><img class="icon header__git" src="img/git.svg" alt="Github"/></a>
+            <a href="https://twitter.com/RyanLeichliter" target="_blank"><img class="icon header__twitter" src="<?php echo get_template_directory_uri(); ?>/img/twitter.svg" alt="Twitter"/></a>
+            <a href="mailto:ryan.leichliter@icloud.com?Subject=I%20am%20interested%20in%20hiring%20you!"><img class="icon header__email" src="<?php echo get_template_directory_uri(); ?>/img/email.svg" alt="Email"/></a>
+            <a href="https://github.com/LeKohrs" target="_blank"><img class="icon header__git" src="<?php echo get_template_directory_uri(); ?>/img/git.svg" alt="Github"/></a>
         </div>
     </header>
