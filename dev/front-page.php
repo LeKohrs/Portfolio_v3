@@ -1,12 +1,49 @@
 <!-- TEMPLATE FOR THE FRONT PAGE -->
+<?php
+/**
+ * Template Name: Portfolio Home Page
+ * Description: Home page for Ryan's Portfolio
+ *
+ */
+?>
 
 <?php get_template_part('templates/header'); ?>
 
-<section class="content--wrapper">
-    <main class="content" role="main">
-        <?php while(have_posts()) : the_post(); ?>
-
-        <?php endwhile; ?>
+<section class="wrapper">
+    <main class="body__main">
+        <div class="plaid-line"></div>
+        <object class="pronunciation" type="image/svg+xml" data="img/pronuciation.svg"></object>
+        <section class="intro">
+            <!--<object class="intro__face" type="image/svg+xml" data="img/face-main.svg"></object>-->
+            <div class="intro__title">
+                <h1>Ryan Leichliter</h1>
+                <h2>Web Development <span>|</span> Animation</h2>
+                <p>I’m a web developer and animator from Omaha, NE. I have a passion for animation and love the challenge of making web animation functional as well as fun.</p>
+            </div>
+        </section>
+        <section class="build">
+            <div class="header header--build">
+                <object class="build__icons" type="image/svg+xml" data="img/icons-build.svg"></object>
+                <h3>Build it.</h3>
+            </div>
+            <p>I excel at taking designs and making them look good on the web on multiple platforms for the latest technologies.</p>
+        </section>
+        <section class="move">
+            <div class="header header--move">
+                <h3>Move it.</h3>
+                <object class="move__icons" type="image/svg+xml" data="img/icons-move.svg"></object>
+            </div>
+            <p>My real passion is adding movement to your web experience either through gif or javascript. I excel at anything from character animation to functional informative UX. I also love to create gifs to enhance the experience of your website or help boost your social media presence.</p>
+        </section>
+        <section class="work">
+            <div class="header header--work">
+                <object class="work__icons" type="image/svg+xml" data="img/icons-work.svg"></object>
+                <h3>Work it.</h3>
+            </div>
+            <p>I’m currently available for hire. If you need to talk about anything Web / Animation / Geek drop me a line. Or just press this button.</p>
+            <img class="arrow arrow--down" src="img/arrow.svg"/>
+            <a href="mailto:ryan.leichliter@icloud.com?Subject=I%20am%20interested%20in%20hiring%20you!"><img class="email email--alt" src="img/button-email.svg"/></a>
+        </section>
     </main>
 </section>
 

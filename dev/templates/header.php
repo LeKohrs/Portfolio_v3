@@ -17,32 +17,19 @@
     <link href="<?php echo get_template_directory_uri(); ?>/img/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
 
     <?php wp_head(); ?>
-
-    <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
+    
 </head>
 <body <?php body_class(); ?>>
-<!__[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]__>
 <div class="wrapper">
     <header class="body__header" role="banner">
-        <?php if(is_front_page()) : ?>
-        <h1 class="blog-name">
-            <?php bloginfo('name'); ?>
-        </h1>
-        <?php else : ?>
-        <a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>">
-            <h1 class="blog-name">
-                <?php bloginfo('name'); ?>
-            </h1>
-        </a>
-        <?php endif; ?>
-
-        <nav class="main-nav" role="navigation">
-            <?php
-            if (has_nav_menu('primary_navigation')) :
-                wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'main-nav__menu'));
-            endif;
-            ?>
-        </nav>
+        <div class="header__menu">
+            <a href="index.html"><h4>About</h4></a>
+            <a href="index.html"><img class="logo" src="img/ryan-logo.svg" alt="Ryan's Logo"/></a>
+            <a href="work.html"><h4>Work</h4></a>
+        </div>
+        <div class="header__links">
+            <a href="https://twitter.com/RyanLeichliter" target="_blank"><img class="icon header__twitter" src="img/twitter.svg" alt="Twitter"/></a>
+            <a href="mailto:ryan.leichliter@icloud.com?Subject=I%20am%20interested%20in%20hiring%20you!"><img class="icon header__email" src="img/email.svg" alt="Email"/></a>
+            <a href="https://github.com/LeKohrs" target="_blank"><img class="icon header__git" src="img/git.svg" alt="Github"/></a>
+        </div>
     </header>

@@ -1,12 +1,10 @@
     <footer class="body__footer" role="contentinfo">
-        <section class="footer__copyright">
-            This is the <a href="http://github.com/joshbroton/abessive">Abessive Theme Boilerplate</a> and is licensed under the GPLv2 or later.
-        </section>
-        <?php if (has_nav_menu('footer_navigation')) : ?>
-        <nav class="secondary-nav" role="navigation">
-            <?php wp_nav_menu(array('theme_location' => 'footer_navigation', 'menu_class' => 'secondary-nav__menu')); ?>
-        </nav>
-        <?php endif; ?>
+        <h5>&copy; 2016 Ryan Leichliter</h5>
+        <div class="footer__links">
+            <a href="https://twitter.com/RyanLeichliter" target="_blank"><img class="icon footer__twitter" src="img/twitter-footer.svg" alt="Twitter"/></a>
+            <a href="mailto:ryan.leichliter@icloud.com?Subject=I%20am%20interested%20in%20hiring%20you!"><img class="icon footer__email" src="img/email-footer.svg" alt="Email"/></a>
+            <a href="https://github.com/LeKohrs" target="_blank"><img class="icon footer__git" src="img/git-footer.svg" alt="Github"/></a>
+        </div>
     </footer>
     <?php wp_footer(); ?>
 </div> <!-- .wrapper -->
