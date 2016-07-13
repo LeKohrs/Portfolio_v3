@@ -529,7 +529,7 @@ h5 {
 
 .body__header {
   position: relative;
-  padding: .5rem 0;
+  padding-top: .5rem;
   text-align: center; }
 
 .header__menu {
@@ -933,6 +933,8 @@ article {
 article:nth-child(2) .post__content {
   background: #fff; }
   article:nth-child(2) .post__content h5 {
+    border-radius: 15px;
+    background-clip: padding-box;
     margin-top: 1rem;
     padding: 1rem;
     border: 1px #636466 solid; }
@@ -947,14 +949,19 @@ article:nth-child(2) .post__content {
 article:nth-child(3) .post__content {
   background: #4ebebc; }
 
+article:nth-child(3) h5 {
+  border: 1px #fff solid; }
+
 .post__header {
   width: 40%; }
 
 .post__content {
   width: 60%;
-  padding: 3rem;
+  padding: 2rem;
   background: #3790ca;
   text-align: center; }
+  .post__content h3 {
+    margin: 1rem auto 2.5rem; }
   .post__content h5 {
     margin-top: 3rem; }
   .post__content a,
@@ -964,12 +971,13 @@ article:nth-child(3) .post__content {
     color: #fff; }
   .post__content .post__content--inner {
     text-align: left;
-    color: #fff; }
+    color: #fff;
+    line-height: 1.9rem; }
   .post__content .byline {
     font-family: "Gotham-Book";
     font-size: 1.1875rem; }
 
-.post__thumbnail {
-  width: 110%; }
+.post__thumbnail img {
+  width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */

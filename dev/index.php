@@ -9,7 +9,8 @@
             <header class="content__header post__header">
                 <?php if ( has_post_thumbnail() ) : ?>
                     <figure class="content__thumbnail post__thumbnail">
-                        <?php the_post_thumbnail( 'my-custom-image-size' );  ?>
+                        <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute();
+                        ?>"><?php the_post_thumbnail( 'my-custom-image-size' ); ?></a>
                     </figure>
                 <?php endif; ?>
             </header>
@@ -23,9 +24,10 @@
                     <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
                 </h3>
                 <div class="content--inner post__content--inner">
-                    <?php echo excerpt(50); ?>
+                    <?php echo excerpt(38); ?>
                 </div>
-                <h5>Read More</h5>
+                <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><h5>Read
+                        More</h5></a>
             </section>
             <footer class="post__metadata">
 

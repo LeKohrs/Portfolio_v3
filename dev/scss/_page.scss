@@ -11,6 +11,7 @@ article:nth-child(2) {
   .post__content {
     background: $white;
     h5 {
+      @include rounded(15px);
       margin-top: 1rem;
       padding: 1rem;
       border: 1px $siteDarkGray solid;
@@ -32,6 +33,9 @@ article:nth-child(3) {
   .post__content {
     background: $siteTeal;
   }
+  h5 {
+    border: 1px $white solid;
+  }
 }
 
 .post__header {
@@ -40,9 +44,13 @@ article:nth-child(3) {
 
 .post__content {
   width: 60%;
-  padding: 3rem;
+  padding: 2rem;
   background: $siteBlue;
   text-align: center;
+
+  h3 {
+    margin: 1rem auto 2.5rem;
+  }
 
   h5 {
     margin-top: 3rem;
@@ -58,6 +66,7 @@ article:nth-child(3) {
   .post__content--inner {
     text-align: left;
     color: $white;
+    line-height: 1.9rem;
   }
 
   .byline {
@@ -67,6 +76,8 @@ article:nth-child(3) {
 }
 
 .post__thumbnail {
-  width: 110%;
+  img {
+    width: 100%;
+  }
 }
 
