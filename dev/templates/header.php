@@ -25,8 +25,8 @@
 <div class="wrapper">
     <header class="body__header" role="banner">
         <div class="header__menu">
-            <a href="<?php echo get_template_directory_uri(); ?>/home"><h4>About</h4></a>
             <a href="<?php echo get_template_directory_uri(); ?>/home"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/ryan-logo.svg" alt="Ryan's Logo"/></a>
+            <a href="<?php echo get_template_directory_uri(); ?>/home"><h4>About</h4></a>
             <a href="<?php echo get_template_directory_uri(); ?>/work"><h4>Work</h4></a>
             <a href="<?php echo get_template_directory_uri(); ?>/blog"><h4>Blog</h4></a>
         </div>
