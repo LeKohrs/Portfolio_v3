@@ -1,5 +1,16 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 .wrapper {
     overflow: hidden;
+}
+
+.content--wrapper,
+.body__work,
+.body__main {
+    margin: 0 0 53px;
 }
 
 a {
@@ -72,5 +83,11 @@ h5 {
 @media only screen and (max-width: 573px) {
     h1 {
         font-size: (87rem / 16);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: (75rem / 16);
     }
 }

@@ -14,8 +14,6 @@
                         <time class="byline__date updated" datetime="<?php echo the_time('Y-m-j'); ?>" pubdate>
                             <?php the_time(get_option('date_format')); ?>
                         </time>
-                        by
-                        <span class="byline__author"><?php the_author_posts_link(); ?></span>
                     </aside>
                 </header>
                 <section class="post__content"  itemprop="articleBody">

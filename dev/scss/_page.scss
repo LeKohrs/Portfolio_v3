@@ -4,7 +4,7 @@
     @include flexbox-justify-content(center);
     @include flexbox-align-items(center);
     @include flexbox-flex-wrap(no-wrap);
-    max-width: (1000rem / 16);
+    max-width: (1200rem / 16);
     margin: 0 auto;
   }
 
@@ -13,7 +13,7 @@
       background: $white;
       h5 {
         @include rounded(15px);
-        margin-top: 1rem;
+        margin-top: 3rem;
         padding: 1rem;
         border: 1px $siteDarkGray solid;
       }
@@ -81,6 +81,25 @@
       width: 100%;
     }
   }
+}
 
+@media only screen and (max-width: $smallTabletBreakpoint) {
+  .content--blog {
+    article {
+      @include flexbox();
+      @include flexbox-justify-content(center);
+      @include flexbox-align-items(center);
+      @include flexbox-flex-wrap(wrap);
+      width: 100%;
+    }
+
+    .post__header {
+      width: 100%;
+    }
+
+    .post__content {
+      width: 100%;
+    }
+  }
 }
 
