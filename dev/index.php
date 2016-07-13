@@ -47,7 +47,6 @@
             </div>
         </nav>
     </main>
-    <?php get_template_part('templates/sidebar'); ?>
 </section>
 
 <?php get_template_part('templates/footer'); ?>

@@ -11,7 +11,6 @@
 
 <section class="wrapper">
     <main class="body__main">
-        <div class="plaid-line"></div>
         <object class="pronunciation" type="image/svg+xml" data="<?php echo get_template_directory_uri(); ?>/img/pronuciation.svg"></object>
         <section class="intro">
             <div class="intro__title">

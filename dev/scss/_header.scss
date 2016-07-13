@@ -1,6 +1,6 @@
 .body__header {
   position: relative;
-  padding: .3rem 0;
+  padding: .5rem 0;
   text-align: center;
 }
 
@@ -8,7 +8,7 @@
   @include flexbox();
   @include flexbox-justify-content(space-around);
   @include flexbox-align-items(center);
-  width: (250rem / 16);
+  width: (300rem / 16);
   margin: 0 auto;
 }
 
@@ -17,6 +17,7 @@
 }
 
 .header__links {
+  @include transform-translate(0, -50%);
   @include flexbox();
   @include flexbox-justify-content(space-around);
   @include flexbox-align-items(center);
@@ -24,7 +25,7 @@
   position: absolute;
   width: (150rem / 16);
   height: (28.5rem / 16);
-  top: 50%;
+  top: 40%;
   right: 2rem;
 }
 
@@ -47,6 +48,10 @@
 .icon:hover {
   @include transform-origin(50%, 50%);
   @include transform-scale(1.2, 1.2);
+}
+
+.plaid-line {
+  margin-top: .5rem;
 }
 
 @media only screen and (max-width: 675px) {

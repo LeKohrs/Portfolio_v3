@@ -17,8 +17,10 @@ if(!function_exists('abessive_scripts_method')) {
             true);
         if (is_page_template('front-page.php')) {
             wp_enqueue_script('abessive_index', get_template_directory_uri() . '/js/site/index.js','', '', true);
-        } else {
+        } elseif (is_page_template('work-page.php')) {
             wp_enqueue_script('abessive_app', get_template_directory_uri() . '/js/site/app.js','', '', true);
+        } else {
+            
         }
 
 

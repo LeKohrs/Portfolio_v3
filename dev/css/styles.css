@@ -529,7 +529,7 @@ h5 {
 
 .body__header {
   position: relative;
-  padding: .3rem 0;
+  padding: .5rem 0;
   text-align: center; }
 
 .header__menu {
@@ -540,13 +540,15 @@ h5 {
   justify-content: space-around;
   -ms-flex-align: center;
   align-items: center;
-  width: 15.625rem;
+  width: 18.75rem;
   margin: 0 auto; }
 
 .logo {
   width: 4.125rem; }
 
 .header__links {
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
   -ms-box-orient: horizontal;
   display: -ms-flexbox;
   display: flex;
@@ -559,7 +561,7 @@ h5 {
   position: absolute;
   width: 9.375rem;
   height: 1.78125rem;
-  top: 50%;
+  top: 40%;
   right: 2rem; }
 
 .header__twitter {
@@ -579,6 +581,9 @@ h5 {
   transform-origin: 50% 50%;
   -ms-transform: scale(1.2, 1.2);
   transform: scale(1.2, 1.2); }
+
+.plaid-line {
+  margin-top: .5rem; }
 
 @media only screen and (max-width: 675px) {
   .header__links {
