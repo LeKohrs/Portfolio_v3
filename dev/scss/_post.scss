@@ -1,0 +1,42 @@
+.content--single {
+  a {
+    color: $linkColor;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+      color: $siteBlue;
+    }
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  header {
+    width: 95%;
+    margin: 2rem auto;
+  }
+
+  .byline {
+    font-family: $h4Font;
+    font-size: (19rem / 16);
+  }
+
+  .post__content--inner {
+    width: 95%;
+    margin: 3rem auto 1rem;
+    line-height: 1.5rem;
+  }
+
+  footer {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .comments {
+    width: 50%;
+    margin-top: 3rem;
+  }
+}

@@ -10,7 +10,7 @@
 <?php get_template_part('templates/header'); ?>
 
 <section class="wrapper">
-    <main class="body__main">
+    <main class="body__main body__main--blog">
         <?php get_template_part('index'); ?>
     </main>
 </section>

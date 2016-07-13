@@ -1,83 +1,86 @@
-article {
-  @include flexbox();
-  @include flexbox-justify-content(center);
-  @include flexbox-align-items(center);
-  @include flexbox-flex-wrap(no-wrap);
-  max-width: (1000rem / 16);
-  margin: 0 auto;
-}
+.content--blog {
+  article {
+    @include flexbox();
+    @include flexbox-justify-content(center);
+    @include flexbox-align-items(center);
+    @include flexbox-flex-wrap(no-wrap);
+    max-width: (1000rem / 16);
+    margin: 0 auto;
+  }
 
-article:nth-child(2) {
-  .post__content {
-    background: $white;
+  article:nth-child(2) {
+    .post__content {
+      background: $white;
+      h5 {
+        @include rounded(15px);
+        margin-top: 1rem;
+        padding: 1rem;
+        border: 1px $siteDarkGray solid;
+      }
+
+      a,
+      h3,
+      h5,
+      .byline {
+        color: $siteDarkGray;
+      }
+      .post__content--inner {
+        color: $siteDarkGray;
+      }
+    }
+  }
+
+  article:nth-child(3) {
+    .post__content {
+      background: $siteTeal;
+    }
     h5 {
-      @include rounded(15px);
-      margin-top: 1rem;
-      padding: 1rem;
-      border: 1px $siteDarkGray solid;
+      border: 1px $white solid;
+    }
+  }
+
+  .post__header {
+    width: 40%;
+  }
+
+  .post__content {
+    width: 60%;
+    padding: 2rem;
+    background: $siteBlue;
+    text-align: center;
+
+    h3 {
+      margin: 1rem auto 2.5rem;
+    }
+
+    h5 {
+      margin-top: 3rem;
     }
 
     a,
     h3,
     h5,
     .byline {
-      color: $siteDarkGray;
+      color: $white;
     }
+
     .post__content--inner {
-      color: $siteDarkGray;
+      text-align: left;
+      color: $white;
+      line-height: 1.9rem;
+    }
+
+    .byline {
+      font-family: $h4Font;
+      font-size: (19rem / 16);
     }
   }
-}
 
-article:nth-child(3) {
-  .post__content {
-    background: $siteTeal;
-  }
-  h5 {
-    border: 1px $white solid;
-  }
-}
-
-.post__header {
-  width: 40%;
-}
-
-.post__content {
-  width: 60%;
-  padding: 2rem;
-  background: $siteBlue;
-  text-align: center;
-
-  h3 {
-    margin: 1rem auto 2.5rem;
+  .post__thumbnail {
+    img {
+      width: 100%;
+    }
   }
 
-  h5 {
-    margin-top: 3rem;
-  }
-
-  a,
-  h3,
-  h5,
-  .byline {
-    color: $white;
-  }
-
-  .post__content--inner {
-    text-align: left;
-    color: $white;
-    line-height: 1.9rem;
-  }
-
-  .byline {
-    font-family: $h4Font;
-    font-size: (19rem / 16);
-  }
-}
-
-.post__thumbnail {
-  img {
-    width: 100%;
-  }
 }
 

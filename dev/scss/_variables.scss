@@ -77,7 +77,7 @@ $h6FontWeight: 300;
 $codeFont: monospace;
 
 // Links
-$linkColor: #00f;
+$linkColor: $siteDarkGray;
 $linkHover: darken($linkColor,5%);
 $linkVisited: darken($linkColor,10%);
 $linkActive: darken($linkColor,15%);

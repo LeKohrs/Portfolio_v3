@@ -3,13 +3,13 @@
 <?php get_template_part('templates/header'); ?>
 
 <section class="content--wrapper">
-    <main class="content" role="main">
+    <main class="content content--single" role="main">
         <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class('post'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
                 <header class="content__header post__header">
-                    <h1 class="content__title post__title" title="<?php the_title_attribute(); ?>" itemprop="headline">
+                    <h3 class="content__title post__title" title="<?php the_title_attribute(); ?>" itemprop="headline">
                         <?php the_title(); ?>
-                    </h1>
+                    </h3>
                     <aside class="byline vcard">
                         <time class="byline__date updated" datetime="<?php echo the_time('Y-m-j'); ?>" pubdate>
                             <?php the_time(get_option('date_format')); ?>
@@ -66,7 +66,6 @@
         </article>
         <?php endif; ?>
     </main>
-    <?php get_template_part('templates/sidebar'); ?>
 </section>
 
 <?php get_template_part('templates/footer'); ?>

@@ -3,7 +3,7 @@
 <?php get_template_part('templates/header'); ?>
 
 <section class="content--wrapper">
-    <main class="content" role="main">
+    <main class="content content--blog" role="main">
         <?php while(have_posts()) : the_post(); ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class('post'); ?> role="article">
             <header class="content__header post__header">
