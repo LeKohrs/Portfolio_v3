@@ -17,6 +17,8 @@
     <link href="<?php echo get_template_directory_uri(); ?>/img/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
 
     <?php wp_head(); ?>
+    <script src="https://use.typekit.net/mxt3zqg.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     
 </head>
 <body <?php body_class(); ?>>

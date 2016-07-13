@@ -915,4 +915,61 @@ h5 {
   transform: translate(-50%, 0);
   position: relative; }
 
+article {
+  -ms-box-orient: horizontal;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: none;
+  -moz-box-pack: none;
+  -ms-flex-wrap: no-wrap;
+  flex-wrap: no-wrap;
+  max-width: 62.5rem;
+  margin: 0 auto; }
+
+article:nth-child(2) .post__content {
+  background: #fff; }
+  article:nth-child(2) .post__content h5 {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px #636466 solid; }
+  article:nth-child(2) .post__content a,
+  article:nth-child(2) .post__content h3,
+  article:nth-child(2) .post__content h5,
+  article:nth-child(2) .post__content .byline {
+    color: #636466; }
+  article:nth-child(2) .post__content .post__content--inner {
+    color: #636466; }
+
+article:nth-child(3) .post__content {
+  background: #4ebebc; }
+
+.post__header {
+  width: 40%; }
+
+.post__content {
+  width: 60%;
+  padding: 3rem;
+  background: #3790ca;
+  text-align: center; }
+  .post__content h5 {
+    margin-top: 3rem; }
+  .post__content a,
+  .post__content h3,
+  .post__content h5,
+  .post__content .byline {
+    color: #fff; }
+  .post__content .post__content--inner {
+    text-align: left;
+    color: #fff; }
+  .post__content .byline {
+    font-family: "Gotham-Book";
+    font-size: 1.1875rem; }
+
+.post__thumbnail {
+  width: 110%; }
+
 /*# sourceMappingURL=styles.css.map */

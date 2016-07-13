@@ -7,34 +7,28 @@
         <?php while(have_posts()) : the_post(); ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class('post'); ?> role="article">
             <header class="content__header post__header">
-                <h1 class="content__title post__title">
-                    <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-                </h1>
+                <?php if ( has_post_thumbnail() ) : ?>
+                    <figure class="content__thumbnail post__thumbnail">
+                        <?php the_post_thumbnail( 'my-custom-image-size' );  ?>
+                    </figure>
+                <?php endif; ?>
+            </header>
+            <section class="post__content">
                 <aside class="byline vcard">
                     <time class="byline__date updated" datetime="<?php echo the_time('Y-m-j'); ?>" pubdate>
                         <?php the_time(get_option('date_format')); ?>
                     </time>
-                    by
-                    <span class="byline__author"><?php the_author_posts_link(); ?></span>
                 </aside>
-            </header>
-            <section class="post__content">
-                <?php if ( has_post_thumbnail() ) : ?>
-                <figure class="content__thumbnail post__thumbnail">
-                    <?php the_post_thumbnail(); ?>
-                </figure>
-                <?php endif; ?>
+                <h3 class="content__title post__title">
+                    <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                </h3>
                 <div class="content--inner post__content--inner">
-                    <?php the_content(); ?>
+                    <?php echo excerpt(50); ?>
                 </div>
+                <h5>Read More</h5>
             </section>
             <footer class="post__metadata">
-                <section class="post__categories">
-                    Categories: <?php the_category(', '); ?>
-                </section>
-                <section class="post__tags">
-                    <?php the_tags('<span class="tags-title">Tags:</span> ', ', ', ''); ?>
-                </section>
+
             </footer>
         </article>
         <?php endwhile; ?>
