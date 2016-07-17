@@ -11,8 +11,7 @@ var gulp            = require('gulp'),
     htmlreplace     = require('gulp-html-replace'),
     zip             = require('gulp-zip'),
     eslint          = require('gulp-eslint'),
-    scsslint        = require('gulp-scss-lint'),
-    tinify          = require('gulp-tinify');
+    scsslint        = require('gulp-scss-lint');
 
 var roots = {
     dev: './dev/',
@@ -118,7 +117,7 @@ gulp.task('scsslint', ['eslint'], function() {
 
 gulp.task('start', ['watch']);
 
-gulp.task('build', ['clean', 'build-copy', 'minify-css', 'uglify', 'tinify']);
+gulp.task('build', ['clean', 'build-copy', 'minify-css', 'uglify']);
 
 gulp.task('lint', ['eslint', 'scsslint']);
 
