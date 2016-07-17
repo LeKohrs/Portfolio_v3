@@ -1023,7 +1023,11 @@ p .aligncenter {
   .content--blog .post__content h3 {
     margin: 1rem auto 2.5rem; }
   .content--blog .post__content h5 {
-    margin-top: 3rem; }
+    border-radius: 15px;
+    background-clip: padding-box;
+    margin-top: 3rem;
+    padding: 1rem;
+    border: 1px #fff solid; }
   .content--blog .post__content a,
   .content--blog .post__content h3,
   .content--blog .post__content h5,

@@ -54,7 +54,10 @@
     }
 
     h5 {
+      @include rounded(15px);
       margin-top: 3rem;
+      padding: 1rem;
+      border: 1px $white solid;
     }
 
     a,
