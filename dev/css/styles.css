@@ -1036,6 +1036,7 @@ p .aligncenter {
   .content--blog .post__content .post__content--inner {
     text-align: left;
     color: #fff;
+    font-size: 1.125rem;
     line-height: 1.9rem; }
   .content--blog .post__content .byline {
     font-family: "Gotham-Book";
