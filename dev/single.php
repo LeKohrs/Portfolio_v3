@@ -17,11 +17,6 @@
                     </aside>
                 </header>
                 <section class="post__content"  itemprop="articleBody">
-                    <?php if ( has_post_thumbnail() ) : ?>
-                    <figure class="content__thumbnail post__thumbnail">
-                        <?php the_post_thumbnail(); ?>
-                    </figure>
-                    <?php endif; ?>
                     <div class="content--inner post__content--inner">
                         <?php the_content(); ?>
                     </div>

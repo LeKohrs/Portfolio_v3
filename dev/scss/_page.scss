@@ -28,6 +28,10 @@
         color: $siteDarkGray;
       }
     }
+
+    .content__thumbnail {
+      max-height: (375rem / 16);
+    }
   }
 
   article:nth-child(3) {

@@ -1006,6 +1006,9 @@ p .aligncenter {
   .content--blog article:nth-child(2) .post__content .post__content--inner {
     color: #636466; }
 
+.content--blog article:nth-child(2) .content__thumbnail {
+  max-height: 23.4375rem; }
+
 .content--blog article:nth-child(3) .post__content {
   background: #4ebebc; }
 
