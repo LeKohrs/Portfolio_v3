@@ -28,10 +28,6 @@
         color: $siteDarkGray;
       }
     }
-
-    .content__thumbnail {
-      max-height: (375rem / 16);
-    }
   }
 
   article:nth-child(3) {
@@ -87,6 +83,7 @@
   .post__thumbnail {
     img {
       width: 100%;
+      max-height: (375rem / 16);
     }
   }
 }
