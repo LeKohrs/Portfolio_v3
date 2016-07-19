@@ -1063,7 +1063,10 @@ p .aligncenter {
   .content--blog .post__header {
     width: 100%; }
   .content--blog .post__content {
-    width: 100%; } }
+    width: 100%; }
+  .content--blog .post__thumbnail img {
+    width: 100%;
+    max-height: 100%; } }
 
 .content--single a {
   color: #636466; }
