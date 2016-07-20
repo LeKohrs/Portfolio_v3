@@ -1,14 +1,22 @@
 .content--blog {
+  @include center-block();
+  max-width: (1200rem / 16);
   article {
     @include flexbox();
     @include flexbox-justify-content(center);
     @include flexbox-align-items(center);
     @include flexbox-flex-wrap(no-wrap);
-    max-width: (1200rem / 16);
+    position: relative;
+    width: 100%;
+    height: 375px;
+    padding-top: 27%;
     margin: 0 auto;
   }
 
   article:nth-child(2) {
+    .post__header {
+      background: $white;
+    }
     .post__content {
       background: $white;
       h5 {
@@ -31,6 +39,9 @@
   }
 
   article:nth-child(3) {
+    .post__header {
+      background: $siteTeal;
+    }
     .post__content {
       background: $siteTeal;
     }
@@ -40,11 +51,20 @@
   }
 
   .post__header {
-    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: inherit;
+    background: $siteBlue;
   }
 
   .post__content {
-    width: 60%;
+    top: 0;
+    position: absolute;
+    right: 0;
+    width: 800px;
+    height: inherit;
     padding: 2rem;
     background: $siteBlue;
     text-align: center;
@@ -82,8 +102,33 @@
 
   .post__thumbnail {
     img {
-      width: 100%;
+      width: 400px;
       max-height: (375rem / 16);
+    }
+  }
+}
+
+@media only screen and (max-width: 812px) {
+
+  .content--blog {
+    article {
+      width: 100%;
+      height: 425px;
+    }
+
+    .post__header {
+      display: none;
+    }
+
+    .post__content {
+      width: 100%;
+    }
+
+    .post__thumbnail {
+      img {
+        width: 100%;
+        max-height: 100%;
+      }
     }
   }
 }
@@ -96,15 +141,15 @@
       @include flexbox-align-items(center);
       @include flexbox-flex-wrap(wrap);
       width: 100%;
-    }
-
-    .post__header {
-      width: 100%;
+      height: 100%;
+      padding-top: 0;
     }
 
     .post__content {
+      position: relative;
       width: 100%;
     }
+
     .post__thumbnail {
       img {
         width: 100%;
@@ -113,4 +158,3 @@
     }
   }
 }
-
